@@ -4,15 +4,15 @@
 
 export const environment = {
   production: false,
-  firebase: {
-    apiKey: "REPLACE_WITH_YOUR_FIREBASE_API_KEY",
-    authDomain: "REPLACE_WITH_AUTH_DOMAIN",
-    databaseURL: "REPLACE_WITH_DATABASE_URL",
-    projectId: "REPLACE_WITH_PROJECTID",
-    storageBucket: "REPLACE_WITH_STORAGE_BUCKET",
-    messagingSenderId: "REPLACE_WITH_MESSAGING_SENDERID"
-  }
-};
+  firebaseConfig = {
+    apiKey: "AIzaSyDaw5IGOlqumggfTTrnYDCDtCYatRRMf7M",
+    authDomain: "microproyecto2-93bc3.firebaseapp.com",
+    projectId: "microproyecto2-93bc3",
+    storageBucket: "microproyecto2-93bc3.appspot.com",
+    messagingSenderId: "852040314916",
+    appId: "1:852040314916:web:dac256748a8dede65ba8b1",
+    measurementId: "G-3N08MEGP55"
+  };
 
 /*
  * For easier debugging in development mode, you can import the following file
