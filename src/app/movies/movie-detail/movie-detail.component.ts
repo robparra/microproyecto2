@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { MovieService } from '../service/movie.service';
+import { MovieService } from '../service/movie.service';
 import { ActivatedRoute, Route, Router } from '@angular/router';
 
 @Component({
@@ -13,19 +13,19 @@ export class MovieDetailComponent implements OnInit {
   id: string;
 
   constructor(
-    // private movieService: MovieService,
+    private movieService: MovieService,
     public router: Router,
     public route: ActivatedRoute,
   ) { }
 
   ngOnInit(): void {
     this.id = this.route.snapshot.params['id'];
-    // console.log(this.id);
-    //  this.movieService.getMovie(this.id).subscribe(movie => {
+    console.log(this.id);
+     this.movieService.getMovie(this.id).subscribe(movie => {
       
-    //    this.movie = movie;
-    //   // console.log(this.movie);
-    //  });
+       this.movie = movie;
+      console.log(this.movie);
+     });
   }
 
 }
